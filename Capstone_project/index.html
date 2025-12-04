@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Foodie — Modern Food Delivery Landing</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-grid">
+      <div class="brand">
+        <img src="/hero.png" alt="Foodie logo" class="logo">
+        <div>
+          <span class="brand-name">Foodie</span>
+          <div class="brand-tag">Delicious delivered</div>
+        </div>
+      </div>
+
+      <div class="search-wrap" role="search" aria-label="Search for dishes or restaurants">
+        <label for="search" class="visually-hidden">Search</label>
+        <input id="search" class="search-input" type="search" placeholder="Search dishes, restaurants..." />
+        <button class="search-btn" aria-label="Search">🔍</button>
+      </div>
+
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav">
+        <span class="sr-only">Toggle navigation</span>
+        ☰
+      </button>
+
+      <nav id="primaryNav" class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#restaurants">Restaurants</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <a class="btn btn-ghost" href="#signup">Sign in</a>
+        <a class="btn btn-primary" href="#order">Order Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="Hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1>Crave it. Tap it. Eat it.</h1>
+          <p class="hero-lead">Explore the city's best dishes and get them delivered hot to your door — fast and fresh.</p>
+
+          <div class="hero-cta-row">
+            <a class="btn btn-primary large" href="#menu">Order Now</a>
+            <a class="btn btn-ghost large" href="#restaurants">Browse Restaurants</a>
+          </div>
+
+          <div class="chips" aria-hidden="true">
+            <button class="chip">🍕 Pizza</button>
+            <button class="chip">🥗 Healthy</button>
+            <button class="chip">🥘 Indian</button>
+            <button class="chip">🍣 Sushi</button>
+          </div>
+
+          <ul class="stats" aria-hidden="true">
+            <li><strong>120+</strong><span>Restaurants</span></li>
+            <li><strong>10k+</strong><span>Orders</span></li>
+            <li><strong>4.7★</strong><span>Avg. rating</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-right" aria-hidden="true">
+          <img src="/hero.jpeg" alt="Assorted dishes" class="hero-img">
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu-section" aria-labelledby="menu-heading">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="menu-heading">Featured Menu</h2>
+          <p class="lede">Handpicked favorites from top kitchens.</p>
+        </div>
+
+        <div class="menu-grid" aria-live="polite">
+          <!-- Card 1 -->
+          <article class="card">
+            <div class="card-media">
+              <img src="/Spicy-Chicken-Burger.jpg" alt="Spicy chicken burger">
+              <span class="badge">Popular</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Spicy Chicken Burger</h3>
+              <p class="card-desc">Crispy chicken, house sauce, pickles & lettuce.</p>
+              <div class="card-meta">
+                <div class="rating" aria-label="4.6 out of 5 stars">⭐ 4.6</div>
+                <div class="price">$8.99</div>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-sm" href="#order">Order</a>
+                <button class="icon-btn" aria-label="Add to favorites">♡</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card">
+            <div class="card-media">
+              <img src="/Vegan Quinoa Bowl.jpeg" alt="Vegan quinoa bowl">
+              <span class="badge badge-green">Vegan</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Vegan Quinoa Bowl</h3>
+              <p class="card-desc">Roasted veg, quinoa, tahini drizzle.</p>
+              <div class="card-meta">
+                <div class="rating" aria-label="4.4 out of 5 stars">⭐ 4.4</div>
+                <div class="price">$7.49</div>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-sm" href="#order">Order</a>
+                <button class="icon-btn" aria-label="Add to favorites">♡</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card">
+            <div class="card-media">
+              <img src="/Margherita Pizza.jpeg" alt="Margherita pizza slice">
+              <span class="badge">New</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Margherita Pizza</h3>
+              <p class="card-desc">San Marzano tomatoes, basil, fresh mozzarella.</p>
+              <div class="card-meta">
+                <div class="rating" aria-label="4.8 out of 5 stars">⭐ 4.8</div>
+                <div class="price">$12.00</div>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-sm" href="#order">Order</a>
+                <button class="icon-btn" aria-label="Add to favorites">♡</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Optionally duplicate cards to show grid -->
+        </div>
+      </div>
+    </section>
+
+    <aside class="filters" aria-label="Filters">
+      <div class="container">
+        <h4>Refine (visual)</h4>
+        <form class="filters-form" aria-hidden="true">
+          <label>
+            Cuisine
+            <select>
+              <option>All</option>
+              <option>Italian</option>
+              <option>Indian</option>
+              <option>American</option>
+            </select>
+          </label>
+          <label>
+            Price
+            <select>
+              <option>All</option>
+              <option>$</option>
+              <option>$$</option>
+              <option>$$$</option>
+            </select>
+          </label>
+        </form>
+      </div>
+    </aside>
+
+    <section id="restaurants" class="section restaurants" aria-labelledby="restaurants-heading">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="restaurants-heading">Top Restaurants</h2>
+          <p class="lede">Local favorites with fast delivery.</p>
+        </div>
+
+        <div class="restaurant-row">
+          <article class="restaurant-card">
+            <img src="/images/Blue River restaurant.jpg" alt="Blue River Restaurant">
+            <div class="rest-body">
+              <h3>Blue River</h3>
+              <p>Fast delivery • 4.6 ★</p>
+            </div>
+          </article>
+
+          <article class="restaurant-card">
+            <img src="/images/Sunset Diner.jpeg" alt="Sunset Diner">
+            <div class="rest-body">
+              <h3>Sunset Diner</h3>
+              <p>Family favorites • 4.4 ★</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <h2 id="testimonials-heading">What customers say</h2>
+        <div class="test-grid">
+          <blockquote>
+            <p>“Fast delivery and amazing food. The burger was perfect!”</p>
+            <footer>— Aisha</footer>
+          </blockquote>
+          <blockquote>
+            <p>“Great vegan options and the packaging was eco-friendly.”</p>
+            <footer>— Dan</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Contact & Order</h2>
+        <form class="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">Name <span aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" required placeholder="Your name">
+          </div>
+          <div class="form-row">
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com">
+          </div>
+          <div class="form-row">
+            <label for="message">Order details</label>
+            <textarea id="message" name="message" rows="4" placeholder="What would you like to order?"></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send</button>
+            <button class="btn btn-ghost" type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div>
+        <p>© <span id="year"></span> Foodie — All rights reserved.</p>
+        <p class="muted">Made for Capstone Project — HTML & CSS only.</p>
+      </div>
+
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // small scripts: nav toggle + year
+    (function(){
+      const navToggle = document.getElementById('navToggle');
+      const primaryNav = document.getElementById('primaryNav');
+
+      navToggle.addEventListener('click', () => {
+        const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!expanded));
+        primaryNav.classList.toggle('open');
+      });
+
+      // set footer year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
